@@ -1,5 +1,5 @@
 import timm
-import torch.nn nn
+import torch.nn as nn
 from configs.config import *
 
 def create_vit(num_classes):
