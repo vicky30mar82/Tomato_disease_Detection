@@ -1,6 +1,6 @@
 import torch
 from torch.optim import Adam
-from torch.nn import CrossEntoryLoss
+from torch.nn import CrossEntropyLoss
 from utils.metrics import accuracy
 from configs.config import *
 
@@ -27,6 +27,7 @@ def train_head(model, train_loader, val_loader):
 			optimizer.step()
 			
 		
-	print(f"[Head] Epoch {epochs + 1/{NUM_EPOCHS_HEAD} completed}")
+	print(f"[Head] Epoch {epochs + 1}/{NUM_EPOCHS_HEAD} completed")
+	
 	
 	
