@@ -20,7 +20,7 @@ def fine_tune(model, train_loader, val_loader):
 			optimizer.zero_grad()
 			preds = model(x)
 			loss = criterion(preds,y)
-			loss.backwards()
+			loss.backward()
 			optimizer.step()
 			
 		
